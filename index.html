@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="#accueil" aria-current="page">Accueil</a>
+      <a href="laboratoire.html">Laboratoire</a>
+      <a href="#parler-de-moi">Parler de moi</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portfolio-section" id="accueil" aria-label="Présentation">
+      <picture>
+        <source media="(max-width: 768px), (max-aspect-ratio: 4/5)" srcset="accueil/phone/sec.1.png">
+        <img src="accueil/ordi/sec1.png" alt="Section de présentation du portfolio">
+      </picture>
+      <h1 class="hero-title">Créa'Nice</h1>
+      <a class="section-arrow section-arrow--cta" href="#creation" aria-label="Découvrir la suite du portfolio">
+        <span class="section-arrow__label">Découvrir la suite</span>
+        <span class="section-arrow__icon" aria-hidden="true">↓</span>
+      </a>
+    </section>
+
+    <section class="portfolio-section" id="creation" aria-label="Création, art et communication">
+      <picture>
+        <source media="(max-width: 768px), (max-aspect-ratio: 4/5)" srcset="accueil/phone/sec.2.png">
+        <img src="accueil/ordi/sec2.png" alt="Section création, art et communication">
+      </picture>
+      <a class="section-arrow section-arrow--up" href="#accueil" aria-label="Revenir à la section précédente">
+        <span aria-hidden="true">↑</span>
+      </a>
+      <a class="section-arrow" href="#galerie" aria-label="Aller à la troisième section">
+        <span aria-hidden="true">↓</span>
+      </a>
+    </section>
+
+    <section class="portfolio-section" id="galerie" aria-label="Galerie">
+      <picture>
+        <source media="(max-width: 768px), (max-aspect-ratio: 4/5)" srcset="accueil/phone/sec.3.png">
+        <img src="accueil/ordi/sec3.png" alt="Section galerie">
+      </picture>
+      <a class="section-arrow section-arrow--up" href="#creation" aria-label="Revenir à la section précédente">
+        <span aria-hidden="true">↑</span>
+      </a>
+
+      <div class="gallery-carousel" role="region" aria-roledescription="carrousel" aria-label="Galerie des projets">
+        <div class="gallery-carousel__stage">
+          <button type="button" class="gallery-carousel__nav gallery-carousel__nav--prev" aria-label="Projet précédent">
+            <span aria-hidden="true">‹</span>
+          </button>
+
+          <div class="gallery-carousel__viewport">
+          <ul class="gallery-carousel__track">
+            <li class="gallery-carousel__slide">
+              <a class="gallery-carousel__link" href="laboratoire.html#charmier">
+                <img src="accueil/galerie/charmier.jpg" alt="Le Dossier Charmier" loading="lazy">
+                <span class="gallery-carousel__caption">Le Dossier Charmier</span>
+              </a>
+            </li>
+            <li class="gallery-carousel__slide">
+              <a class="gallery-carousel__link" href="laboratoire.html#epise">
+                <img src="accueil/galerie/epise.jpg" alt="EPISE, épicerie solidaire des étudiants" loading="lazy">
+                <span class="gallery-carousel__caption">EPISE</span>
+              </a>
+            </li>
+            <li class="gallery-carousel__slide">
+              <a class="gallery-carousel__link" href="laboratoire.html#dataviz">
+                <img src="accueil/galerie/dataviz.jpg" alt="Pacific Dataviz Challenge" loading="lazy">
+                <span class="gallery-carousel__caption">Pacific Dataviz Challenge</span>
+              </a>
+            </li>
+            <li class="gallery-carousel__slide">
+              <a class="gallery-carousel__link" href="laboratoire.html#recif">
+                <img src="accueil/galerie/recif.png" alt="Festival de cinéma Récif" loading="lazy">
+                <span class="gallery-carousel__caption">Festival de cinéma Récif</span>
+              </a>
+            </li>
+            <li class="gallery-carousel__slide">
+              <a class="gallery-carousel__link" href="laboratoire.html#ludik">
+                <img src="accueil/galerie/ludik.png" alt="Ludik NC" loading="lazy">
+                <span class="gallery-carousel__caption">Ludik NC</span>
+              </a>
+            </li>
+            <li class="gallery-carousel__slide">
+              <span class="gallery-carousel__link gallery-carousel__link--static">
+                <img src="accueil/galerie/nc1ere.png" alt="Nouvelle Calédonie 1ère, pôle numérique" loading="lazy">
+                <span class="gallery-carousel__caption">NC 1ère · Pôle numérique</span>
+              </span>
+            </li>
+          </ul>
+          </div>
+
+          <button type="button" class="gallery-carousel__nav gallery-carousel__nav--next" aria-label="Projet suivant">
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
+
+        <div class="gallery-carousel__dots"></div>
+      </div>
+      <div class="footer-hotzone" aria-hidden="true"></div>
+    </section>
+
+    <section class="portfolio-section" id="parler-de-moi" aria-label="Parler de moi">
+      <picture>
+        <source media="(max-width: 768px), (max-aspect-ratio: 4/5)" srcset="parler%20de%20moi/phone/plm1.png">
+        <img src="parler%20de%20moi/ordi/qui1.png" alt="Présentation de Shanice Tanga">
+      </picture>
+      <a class="section-arrow section-arrow--up" href="#galerie" aria-label="Revenir à la section précédente">
+        <span aria-hidden="true">↑</span>
+      </a>
+      <a class="section-arrow is-desktop-only" href="#experiences" aria-label="Aller à la section suivante">
+        <span aria-hidden="true">↓</span>
+      </a>
+      <a class="section-arrow is-mobile-only" href="#logiciels" aria-label="Aller à la section suivante">
+        <span aria-hidden="true">↓</span>
+      </a>
+    </section>
+
+    <section class="portfolio-section" id="experiences" aria-label="Expériences">
+      <picture>
+        <img src="parler%20de%20moi/ordi/exp2.png" alt="Frise chronologique des expériences et diplômes">
+      </picture>
+      <a class="section-arrow section-arrow--up" href="#parler-de-moi" aria-label="Revenir à la section précédente">
+        <span aria-hidden="true">↑</span>
+      </a>
+      <a class="section-arrow" href="#logiciels" aria-label="Aller à la section suivante">
+        <span aria-hidden="true">↓</span>
+      </a>
+    </section>
+
+    <section class="portfolio-section" id="logiciels" aria-label="Logiciels">
+      <picture>
+        <source media="(max-width: 768px), (max-aspect-ratio: 4/5)" srcset="parler%20de%20moi/phone/plm2.png">
+        <img src="parler%20de%20moi/ordi/logi3.png" alt="Logiciels et outils maîtrisés">
+      </picture>
+      <a class="section-arrow section-arrow--up is-desktop-only" href="#experiences" aria-label="Revenir à la section précédente">
+        <span aria-hidden="true">↑</span>
+      </a>
+      <a class="section-arrow section-arrow--up is-mobile-only" href="#parler-de-moi" aria-label="Revenir à la section précédente">
+        <span aria-hidden="true">↑</span>
+      </a>
+      <a class="section-arrow" href="#contacts" aria-label="Aller à la section suivante">
+        <span aria-hidden="true">↓</span>
+      </a>
+    </section>
+
+    <section class="portfolio-section" id="contacts" aria-label="Mes contacts">
+      <picture>
+        <source media="(max-width: 768px), (max-aspect-ratio: 4/5)" srcset="parler%20de%20moi/phone/plm3.png">
+        <img src="parler%20de%20moi/ordi/contact4.png" alt="Mes contacts">
+      </picture>
+
+      <a
+        class="image-hotspot"
+        href="mailto:tangashanice@gmail.com"
+        aria-label="Envoyer un email à tangashanice@gmail.com"
+        data-rect-desktop="0.267708,0.506481,0.477083,0.061111"
+        data-rect-mobile="0.179487,0.382857,0.692308,0.06"
+      ></a>
+      <a
+        class="image-hotspot"
+        href="https://www.linkedin.com/in/shanice-tanga-a43187392/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Profil LinkedIn de Shanice Tanga"
+        data-rect-desktop="0.423438,0.652778,0.0625,0.112037"
+        data-rect-mobile="0.358974,0.488571,0.141026,0.114286"
+      ></a>
+      <a
+        class="image-hotspot"
+        href="https://www.instagram.com/shanicestk/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Profil Instagram de Shanice Tanga"
+        data-rect-desktop="0.5125,0.652778,0.063542,0.112037"
+        data-rect-mobile="0.538462,0.488571,0.141026,0.114286"
+      ></a>
+
+      <a class="section-arrow section-arrow--up" href="#logiciels" aria-label="Revenir à la section précédente">
+        <span aria-hidden="true">↑</span>
+      </a>
+      <div class="footer-hotzone" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="footer-brand">
+      <span class="footer-label">PORTFOLIO</span>
+      <p>Création · Art · Communication</p>
+    </div>
+    <nav class="footer-nav" aria-label="Navigation secondaire">
+      <a href="#accueil">Accueil</a>
+      <a href="laboratoire.html">Laboratoire</a>
+      <a href="#parler-de-moi">Parler de moi</a>
+    </nav>
+    <p class="footer-note">© 2026 · Tous droits réservés</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
